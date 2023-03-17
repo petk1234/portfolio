@@ -1,0 +1,39 @@
+.request {
+  &Form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  &Input {
+    border-radius: 5px;
+    height: 30px;
+    font-size: 16px;
+    width: 300px;
+    border: 1px solid rgb(196, 196, 196);
+    margin-bottom: 15px;
+    padding-left: 10px;
+    outline: none;
+  }
+  &Textarea {
+    border-radius: 5px;
+    height: 100px;
+    width: 300px;
+    font-size: 16px;
+    border: 1px solid rgb(196, 196, 196);
+    margin-bottom: 15px;
+    padding-left: 10px;
+    outline: none;
+    resize: none;
+  }
+  &Button {
+    background-color: rgb(134, 64, 17);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+  }
+}

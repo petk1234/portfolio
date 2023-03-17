@@ -1,0 +1,14 @@
+.myProjectEnter {
+  opacity: 0;
+}
+.myProjectEnterActive {
+  opacity: 1;
+  transition: opacity 250ms;
+}
+.myProjectExit {
+  opacity: 1;
+}
+.myProjectExitActive {
+  opacity: 0;
+  transition: opacity 250ms;
+}

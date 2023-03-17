@@ -1,0 +1,43 @@
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  //   align-items: center;
+  height: 80px;
+  background-color: rgb(134, 64, 17);
+  box-sizing: border-box;
+  padding: 0 10% 0 10%;
+}
+.img {
+  margin-top: 10px;
+  height: 60px;
+  width: 60px;
+}
+.title {
+  margin-top: 20px;
+  color: #fff;
+  @media all and (max-width: 550px) {
+    display: none;
+  }
+}
+.nav {
+  margin-top: 30px;
+  display: flex;
+  min-width: 300px;
+  justify-content: space-between;
+}
+.link {
+  color: #fff;
+  //   margin-right: 20px;
+  font-size: 18px;
+  cursor: pointer;
+  &:hover::after {
+    content: "";
+
+    display: block;
+    width: 100%;
+    height: 2px;
+    // margin-right: 20px;
+    background-color: #fff;
+  }
+}

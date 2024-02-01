@@ -1,5 +1,4 @@
 import styles from "./aboutMe.module.scss";
-import myPhoto from "../../myPhoto.jpg";
 import myUpdatedPhoto2 from "../../MyUpdatedPhoto2.jpg";
 export default function AboutMe() {
   return (
@@ -8,11 +7,14 @@ export default function AboutMe() {
         <h1>About me</h1>
         <div className={styles.infoContainer}>
           <div className={styles.generalInfo}>
-            <img src={myUpdatedPhoto2} className={styles.img} />
+            <img alt="" src={myUpdatedPhoto2} className={styles.img} />
             <div>
-              <p className={styles.text}>Hello, my name is Oleksandr Petkun. I am a front-end developer.</p>
               <p className={styles.text}>
-                I am prepared to invest a lot of time in developing hard/soft skills and gaining experience.
+                Hello, my name is Oleksandr Petkun. I am a front-end developer.
+              </p>
+              <p className={styles.text}>
+                I am prepared to invest a lot of time in developing hard/soft skills and gaining
+                experience.
               </p>
             </div>
           </div>
@@ -20,33 +22,32 @@ export default function AboutMe() {
             <h1 className={styles.skillsTitle}>Skills</h1>
             <p className={styles.text}>I am in touch with constructures in JS/TS and React.</p>
             <p className={styles.text}>
-              I have such skills as HTML, CSS, SASS, Tailwind CSS, MUI, Styled Components, JavaScript, TypeScript,
-              React.js, Redux, Redux Toolkit, Git and Test-driven development.
+              During my commercial experience, my technical duties included:
             </p>
-            <div>
-              <div style={{ marginBottom: "20px" }}>
-                <h4 style={{ display: "inline" }}>Css: </h4>
-                <p style={{ display: "inline" }}>flexbox, grid, scss, responsive/adaptive design, mobile-first</p>
-              </div>
-              <div style={{ marginBottom: "20px" }}>
-                <h4 style={{ display: "inline" }}>JS: </h4>
-                <p style={{ display: "inline" }}>basics, DOM, REST API, Asynchronous JavaScript</p>
-              </div>
-              <div style={{ marginBottom: "20px" }}>
-                <h4 style={{ display: "inline" }}>React: </h4>
-                <p style={{ display: "inline" }}>
-                  basics, React Router, React animation, Redux, Redux toolkit, Asynchronous Redux
-                </p>
-              </div>
-              <div style={{ marginBottom: "20px" }}>
-                <h4 style={{ display: "inline" }}>TS: </h4>
-                <p style={{ display: "inline" }}>basics, interfaces, enums, generic types</p>
-              </div>
-              <div style={{ marginBottom: "20px" }}>
-                <h4 style={{ display: "inline" }}>Test-driven development: </h4>
-                <p style={{ display: "inline" }}>Jest, React testing library</p>
-              </div>
-            </div>
+            <ul>
+              <li style={{ marginBottom: "20px" }}>
+                forms (inputs, selects, file uploaders etc.);
+              </li>
+              <li style={{ marginBottom: "20px" }}>
+                modals with different functionality (sending requests to the server, displaying
+                various data from the store);
+              </li>
+              <li style={{ marginBottom: "20px" }}>
+                widgets/popovers/banners on different pages with information about selected item(s);
+              </li>
+              <li style={{ marginBottom: "20px" }}>
+                tables/lists of items, with pagination, filters, selection/deletion of the specific
+                item(s);
+              </li>
+              <li style={{ marginBottom: "20px" }}>
+                adding new columns or column features to the table;
+              </li>
+              <li style={{ marginBottom: "20px" }}>
+                work with displaying different formats of date/numbers on UI by user choice;
+              </li>
+              <li style={{ marginBottom: "20px" }}>charts;</li>
+              <li style={{ marginBottom: "20px" }}>test-driven development.</li>
+            </ul>
           </div>
         </div>
       </div>

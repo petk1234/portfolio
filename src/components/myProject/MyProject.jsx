@@ -8,17 +8,11 @@ export default function MyProject({ projectName }) {
   const [modal, setModal] = useState(false);
   return (
     <>
-      <li
-        className={styles.projectCard}
-        onClick={(e) => modal === false && setModal(true)}
-      >
+      <li className={styles.projectCard} onClick={(e) => modal === false && setModal(true)}>
         <img
+          alt=""
           className={styles.projectImg}
-          src={
-            projectsInfo.filter(
-              (project) => project.projectName === projectName
-            )[0].projectImg
-          }
+          src={projectsInfo.filter((project) => project.projectName === projectName)[0].projectImg}
         />
         <h3>{projectName}</h3>
       </li>
@@ -31,15 +25,12 @@ export default function MyProject({ projectName }) {
           enter: transition["myProjectEnter"],
           enterActive: transition["myProjectEnterActive"],
           exit: transition["myProjectExit"],
-          exitActive: transition["myProjectExitActive"],
+          exitActive: transition["myProjectExitActive"]
         }}
-        mountOnEnter={true}
-      >
+        mountOnEnter={true}>
         <Modal
           projectInfo={JSON.stringify(
-            projectsInfo.filter(
-              (project) => project.projectName === projectName
-            )[0]
+            projectsInfo.filter((project) => project.projectName === projectName)[0]
           )}
           setModal={setModal}
         />
